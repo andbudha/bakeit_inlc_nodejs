@@ -17,6 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/recipes.css" />
     <title>Bake it!</title>
     <link
       rel="icon"
@@ -46,6 +47,33 @@
       </nav>
       <section class="section-box">
         <h1 class="index-header">Bake It Recipes!</h1>
+        <% if(numOfRecipes === 1) {%>
+        <h3>Only one recipe found</h3>
+        <% } else { %>
+        <h3>We have found <%= numOfRecipes%> recipes</h3>
+        <% } %>
+        <div class="recipe-card">
+          <div class="card-img">
+            <i class="cake fa-solid fa-cake-candles fa-5x"></i>
+          </div>
+          <h3>Ingredients:</h3>
+          <div class="recipe-ingredients-box">
+            <ul>
+              <li>ingredient</li>
+              <li>ingredient</li>
+              <li>ingredient</li>
+              <li>ingredient</li>
+              <li>ingredient</li>
+            </ul>
+          </div>
+          <h3>Instructions:</h3>
+          <div class="recipe-instructions-box">
+            <p>
+              Mix everything with beer, serve cold and decorate with mui.
+              jhbhbbljbljb jkknökl kjnjk.
+            </p>
+          </div>
+        </div>
       </section>
       <footer class="footer-box">
         <div class="text-box">
