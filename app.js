@@ -6,7 +6,7 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
 
 //telling expressjs to use the ejs-engine and which files to process
-app.set('view emgine', 'ejs');
+app.set('view engine', 'ejs');
 //here we tell nodejs what and where to find the teplate files
 app.set('views', path.join(__dirname, 'views'));
 
@@ -26,7 +26,13 @@ app.get('/contact', function (req, res) {
   res.render('contact');
 });
 app.get('/recipes', function (req, res) {
-  res.render('recipes');
+  const filePath = path.join(__dirname, 'data', 'recipes.json');
+  const fileData = fs.readFileSync(filePath);
+  const storedRecipes = JSON.parse(fileData);
+  res.render('recipes', {
+    numOfRecipes: storedRecipes.length,
+    recipes: storedRecipes,
+  });
 });
 app.get('/share', function (req, res) {
   res.render('share');
