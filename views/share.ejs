@@ -50,9 +50,22 @@
         <div class="share-form">
           <form action="/share" method="post">
             <div class="secondary-header">
+              <h4>Recipe Name:</h4>
+            </div>
+            <div class="form-element">
+              <label class="label" for="name">recipe name*</label>
+              <input
+                class="input"
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="recipe name..."
+              />
+            </div>
+            <div class="secondary-header">
               <h4>Ingredients:</h4>
             </div>
-
             <div class="form-element">
               <label class="label" for="coding">coding*</label>
               <input
