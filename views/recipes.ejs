@@ -55,31 +55,34 @@
         <% } else { %>
         <h1 class="index-header">Bake It Recipes!</h1>
         <h3>We have found <%= numOfRecipes%> recipes</h3>
-        <% } %> <% if(numOfRecipes.length) %> <% for(let recipe of recipes) {%>
-        <div class="recipe-card">
-          <div class="card-img">
-            <i class="cake fa-solid fa-cake-candles fa-5x"></i>
-          </div>
-          <h2 class="recipe-name"><%= recipe.name %></h2>
-          <h4>Ingredients:</h4>
-          <div class="recipe-ingredients-box">
-            <ul>
-              <li>coding: <%= recipe.coding %></li>
-              <li>mood: <%= recipe.mood %></li>
-              <li>kindness: <%= recipe.kindness %></li>
-              <li>fun: <%= recipe.fun %></li>
-            </ul>
-          </div>
-          <h4>Instructions:</h4>
-          <div class="recipe-instructions-box">
-            <p><%= recipe.instructions %></p>
-          </div>
-          <h4>Decoration:</h4>
-          <div class="recipe-instructions-box">
-            <p>Decorate with: <%= recipe.stack %></p>
-          </div>
-        </div>
         <% } %>
+        <div class="recipe-card-box">
+          <% for(let recipe of recipes) {%>
+          <div class="recipe-card">
+            <div class="card-img">
+              <i class="cake fa-solid fa-cake-candles fa-5x"></i>
+            </div>
+            <h2 class="recipe-name"><%= recipe.name %></h2>
+            <h4>Ingredients:</h4>
+            <div class="recipe-ingredients-box">
+              <ul>
+                <li>coding: <%= recipe.coding %></li>
+                <li>mood: <%= recipe.mood %></li>
+                <li>kindness: <%= recipe.kindness %></li>
+                <li>fun: <%= recipe.fun %></li>
+              </ul>
+            </div>
+            <h4>Instructions:</h4>
+            <div class="recipe-instructions-box">
+              <p><%= recipe.instructions %></p>
+            </div>
+            <h4>Decoration:</h4>
+            <div class="recipe-instructions-box">
+              <p>Decorate with: <%= recipe.stack %></p>
+            </div>
+          </div>
+          <% } %>
+        </div>
       </section>
       <footer class="footer-box">
         <div class="text-box">

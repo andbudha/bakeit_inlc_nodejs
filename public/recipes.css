@@ -10,14 +10,14 @@
 .fa-face-sad-tear {
   margin: 20px 0;
 }
-.footer-box {
-  margin-top: 20px;
-}
-.footer-box,
-.text-box h5 {
-  color: #fff;
-}
 
+.recipe-card-box {
+  min-width: 720px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 .recipe-card {
   width: 340px;
   min-height: 400px;
@@ -57,4 +57,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer-box {
+  margin-top: 20px;
+}
+.footer-box,
+.text-box h5 {
+  color: #fff;
 }
