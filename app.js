@@ -42,7 +42,7 @@ app.post('/share', (req, res) => {
   const filePath = path.join(__dirname, 'data', 'recipes.json');
   const fileData = fs.readFileSync(filePath);
   const recipes = JSON.parse(fileData);
-  recipes.push(recipe);
+  recipes.unshift(recipe);
   fs.writeFileSync(filePath, JSON.stringify(recipes));
   res.redirect('/confirmation');
 });
