@@ -22,3 +22,30 @@
   justify-content: center;
   text-align: center;
 }
+
+.recipes-btn {
+  width: 200px;
+  height: 30px;
+  letter-spacing: 1px;
+  color: #ff407d;
+  border: 1px #ff90bc solid;
+  border-radius: 3px;
+  background: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.recipes-btn:hover {
+  border: none;
+  color: #fff;
+  background: #ff407d;
+  transition: 0.4s;
+}
+.recipes-btn:not(:hover) {
+  transition: 0.5s;
+}
