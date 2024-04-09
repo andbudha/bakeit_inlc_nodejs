@@ -47,7 +47,8 @@
       </nav>
       <section class="section-box">
         <% if(numOfRecipes === 0) {%>
-        <h3>Sorry, no recipes found.</h3>
+        <i class="fa-regular fa-face-sad-tear fa-8x"></i>
+        <h2>Sorry, no recipes found</h2>
         <% } else if(numOfRecipes === 1) { %>
         <h1 class="index-header">Bake It Recipes!</h1>
         <h3>Only one recipe found</h3>
@@ -59,6 +60,7 @@
           <div class="card-img">
             <i class="cake fa-solid fa-cake-candles fa-5x"></i>
           </div>
+          <h2 class="recipe-name"><%= recipe.name %></h2>
           <h4>Ingredients:</h4>
           <div class="recipe-ingredients-box">
             <ul>
