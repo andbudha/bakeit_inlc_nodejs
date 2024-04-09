@@ -5,31 +5,31 @@ const app = express();
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
 
+//telling expressjs to use the ejs-engine and which files to process
+app.set('view emgine', 'ejs');
+//here we tell nodejs what and where to find the teplate files
+app.set('views', path.join(__dirname, 'views'));
+
+//handling routes
 app.get('/', function (req, res) {
-  const filePath = path.join(__dirname, 'views', 'index.html');
-  res.sendFile(filePath);
+  res.render('index');
 });
 
 app.get('/about', function (req, res) {
-  const filePath = path.join(__dirname, 'views', 'about.html');
-  res.sendFile(filePath);
+  res.render('about');
 });
 app.get('/confirmation', function (req, res) {
-  const filePath = path.join(__dirname, 'views', 'confirmation.html');
-  res.sendFile(filePath);
+  res.render('confirmation');
 });
 
 app.get('/contact', function (req, res) {
-  const filePath = path.join(__dirname, 'views', 'contact.html');
-  res.sendFile(filePath);
+  res.render('contact');
 });
 app.get('/recipes', function (req, res) {
-  const filePath = path.join(__dirname, 'views', 'recipes.html');
-  res.sendFile(filePath);
+  res.render('recipes');
 });
 app.get('/share', function (req, res) {
-  const filePath = path.join(__dirname, 'views', 'share.html');
-  res.sendFile(filePath);
+  res.render('share');
 });
 app.post('/share', (req, res) => {
   const recipe = req.body;
