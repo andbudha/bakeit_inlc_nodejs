@@ -241,7 +241,13 @@ ul li a:hover:after {
   border: 1px #ff90bc solid;
   border-radius: 3px;
   background: #fff;
+  font-weight: 500;
   cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .card-btn:hover {
