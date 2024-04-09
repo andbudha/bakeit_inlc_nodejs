@@ -48,44 +48,52 @@
       <section class="share-box">
         <h1 class="share-header">Share it with us!</h1>
         <div class="share-form">
-          <form>
+          <form action="/share" method="post">
             <div class="secondary-header">
               <h4>Ingredients:</h4>
             </div>
 
             <div class="form-element">
-              <label class="label" for="first-name">coding:</label>
+              <label class="label" for="coding">coding*</label>
               <input
                 class="input"
                 type="text"
                 id="coding"
+                name="coding"
+                required
                 placeholder="coding quantity..."
               />
             </div>
             <div class="form-element">
-              <label class="label" for="mood">good mood:</label>
+              <label class="label" for="mood">good mood*</label>
               <input
                 class="input"
                 type="text"
                 id="mood"
+                name="mood"
+                required
                 placeholder="good-mood quantity..."
               />
             </div>
             <div class="form-element">
-              <label class="label" for="email">kindness:</label>
+              <label class="label" for="kindness">kindness*</label>
               <input
                 class="input"
                 type="text"
                 id="kindness"
+                name="kindness"
+                required
                 placeholder="kindness quantity..."
               />
             </div>
             <div class="form-element">
-              <label class="label" for="email">fun:</label>
+              <label class="label" for="fun">fun*</label>
               <input
                 class="input"
                 type="text"
                 id="fun"
+                name="fun"
+                required
                 placeholder="fun quantity..."
               />
             </div>
@@ -93,10 +101,12 @@
               <h4>Instructions:</h4>
             </div>
             <div class="form-element">
-              <label class="label" for="instruction">steps:</label>
+              <label class="label" for="instructions">steps*</label>
               <textarea
                 class="textarea"
+                id="instructions"
                 name="instructions"
+                required
                 placeholder="baking steps..."
               ></textarea>
             </div>
