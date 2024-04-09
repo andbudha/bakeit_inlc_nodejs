@@ -12,7 +12,7 @@
 }
 
 .recipe-card-box {
-  min-width: 720px;
+  min-width: 80%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -65,4 +65,10 @@
 .footer-box,
 .text-box h5 {
   color: #fff;
+}
+
+@media (max-width: 720px) {
+  .recipe-card-box {
+    width: 350px;
+  }
 }
