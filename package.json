@@ -1,0 +1,23 @@
+{
+  "name": "bakeit_plus_nodejs",
+  "version": "1.0.0",
+  "description": "app on html/css/js/nodejs and express",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andbudha/bakeit_plus_nodejs.git"
+  },
+  "author": "Andrei Bartov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andbudha/bakeit_plus_nodejs/issues"
+  },
+  "homepage": "https://github.com/andbudha/bakeit_plus_nodejs#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}
