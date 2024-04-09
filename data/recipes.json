@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "coding": "1 kg",
+    "mood": "1 kg",
+    "kindness": "5 kg",
+    "fun": "1 bucket",
+    "instructions": "mix with happiness and beer!",
+    "stack": "bootstrap"
+  },
+  {
+    "coding": "2 kg",
+    "mood": "4kg",
+    "kindness": "200grams",
+    "fun": "2buckets",
+    "instructions": "mix with love",
+    "stack": "tailwindcss"
+  }
+]
