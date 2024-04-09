@@ -1,0 +1,24 @@
+.section-box {
+  color: #ff407d;
+}
+
+.confirmation-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0 10px;
+}
+
+.confirmation-text {
+  width: 100%;
+  letter-spacing: 1px;
+  color: #ff407d;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

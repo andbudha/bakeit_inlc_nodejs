@@ -1,0 +1,67 @@
+.about-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  color: #ff407d;
+}
+.about-header {
+  max-width: 600px;
+  font-size: 2rem;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.about-paragraph {
+  max-width: 600px;
+  text-align: justify;
+  margin: 10px;
+}
+.cake-icon-box {
+  margin: 15px;
+}
+.table-box {
+  height: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+table {
+}
+
+th {
+  background: #fce9f1;
+  color: #ff407d;
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+  text-align: left;
+}
+
+tr:nth-child(odd) td {
+  background: #fce9f1;
+  color: #ff407d;
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+  text-align: left;
+}
+tr:nth-child(even) td {
+  padding: 5px;
+}
+
+@media (max-width: 630px) {
+  .about-header {
+    margin-top: 20px;
+    max-width: 300px;
+    font-size: 1.5rem;
+  }
+  .about-paragraph {
+    max-width: 300px;
+  }
+}
