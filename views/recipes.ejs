@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <!-- <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +23,9 @@
       rel="icon"
       type="image/x-icon"
       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoSmjlorsYMTWvFdRB--Kipiqq7u7sOzWfsxfKipXpog&s"
-    />
+    /> -->
+    <%- include('includes/head') %>
+    <link rel="stylesheet" href="/recipes.css" />
   </head>
   <body>
     <div class="main">
@@ -57,38 +59,17 @@
         <h3>We have found <%= numOfRecipes%> recipes</h3>
         <% } %>
         <div class="recipe-card-box">
-          <% for(let recipe of recipes) {%>
-          <div class="recipe-card">
-            <div class="card-img">
-              <i class="cake fa-solid fa-cake-candles fa-5x"></i>
-            </div>
-            <h2 class="recipe-name"><%= recipe.name %></h2>
-            <h4>Ingredients:</h4>
-            <div class="recipe-ingredients-box">
-              <ul>
-                <li>coding: <%= recipe.coding %></li>
-                <li>mood: <%= recipe.mood %></li>
-                <li>kindness: <%= recipe.kindness %></li>
-                <li>fun: <%= recipe.fun %></li>
-              </ul>
-            </div>
-            <h4>Instructions:</h4>
-            <div class="recipe-instructions-box">
-              <p><%= recipe.instructions %></p>
-            </div>
-            <h4>Decoration:</h4>
-            <div class="recipe-instructions-box">
-              <p>Decorate with: <%= recipe.stack %></p>
-            </div>
-          </div>
-          <% } %>
+          <% for(let recipe of recipes) {%> <%-
+          include('includes/recipe-card/recipe-card', {recipe: recipe}) %> <% }
+          %>
         </div>
       </section>
-      <footer class="footer-box">
+      <!-- <footer class="footer-box">
         <div class="text-box">
           <h5>&copy; 2024, Bake it!, All Rights Reserved</h5>
         </div>
-      </footer>
+      </footer> -->
+      <%- include('includes/footer') %>
     </div>
   </body>
 </html>
