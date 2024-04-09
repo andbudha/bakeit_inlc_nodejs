@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/andbudha/bakeit_plus_nodejs#readme",
   "dependencies": {
+    "ejs": "^3.1.9",
     "express": "^4.19.2",
     "nodemon": "^3.1.0"
   }
