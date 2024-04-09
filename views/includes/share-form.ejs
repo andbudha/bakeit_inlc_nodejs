@@ -1,0 +1,94 @@
+<div class="share-form">
+  <form action="/share" method="post">
+    <div class="secondary-header">
+      <h4>Recipe Name:</h4>
+    </div>
+    <div class="form-element">
+      <label class="label" for="name">recipe name*</label>
+      <input
+        class="input"
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="recipe name..."
+      />
+    </div>
+    <div class="secondary-header">
+      <h4>Ingredients:</h4>
+    </div>
+    <div class="form-element">
+      <label class="label" for="coding">coding*</label>
+      <input
+        class="input"
+        type="text"
+        id="coding"
+        name="coding"
+        required
+        placeholder="coding quantity..."
+      />
+    </div>
+    <div class="form-element">
+      <label class="label" for="mood">good mood*</label>
+      <input
+        class="input"
+        type="text"
+        id="mood"
+        name="mood"
+        required
+        placeholder="good-mood quantity..."
+      />
+    </div>
+    <div class="form-element">
+      <label class="label" for="fun">fun*</label>
+      <input
+        class="input"
+        type="text"
+        id="fun"
+        name="fun"
+        required
+        placeholder="fun quantity..."
+      />
+    </div>
+    <div class="secondary-header">
+      <h4>Instructions:</h4>
+    </div>
+    <div class="form-element">
+      <label class="label" for="instructions">steps*</label>
+      <textarea
+        class="textarea"
+        id="instructions"
+        name="instructions"
+        required
+        placeholder="baking steps..."
+      ></textarea>
+    </div>
+    <div class="secondary-header">
+      <h4>Stack for decoration:</h4>
+    </div>
+    <div class="radio-form-element">
+      <input
+        class="radio-button"
+        type="radio"
+        id="bootstrap"
+        name="stack"
+        value="bootstrap"
+      />
+      <label for="bootstrap">bootstrap</label>
+    </div>
+    <div class="radio-form-element">
+      <input
+        class="radio-button"
+        type="radio"
+        id="tailwindcss"
+        name="stack"
+        value="tailwindcss"
+      />
+      <label for="tailwindcss">tailwindcss</label>
+    </div>
+
+    <div class="form-element">
+      <input class="send-btn" type="submit" value="Share" />
+    </div>
+  </form>
+</div>
