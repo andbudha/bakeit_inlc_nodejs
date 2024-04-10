@@ -1,4 +1,4 @@
-# This is an educational project built wthe the technologies listed below:
+# This is an educational project built with the technologies listed below:
 
 - **html**
 - **css**
